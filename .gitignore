@@ -1,0 +1,18 @@
+# Ignore these files
+knitro.log
+logs/
+*.png
+*.txt
+*.log
+*.fig
+*.pdf
+*.DS_Store
+*.asv
+
+
+# But not these files...
+!_recalcul_costs_outsiders.txt
+!elimCosts_concatenated_rds_*_correction.txt
+
+# ...even if they are in subdirectories
+!*/

@@ -1,0 +1,30 @@
+
+s.t. c1:  Y[8]*(rho_X + rho_Xg + rho_hX) - Y[1]*(Lambdah + LambdaX + mu) - b*(ph - 1) + Y[15]*(nuX + rho_X + rho_Xg + rho_hX) + Y[22]*(gammaX + nuX) = 0 ; 
+s.t. c2:  Lambdah*Y[1] - Y[2]*(LambdaX + mu + rho_h + rho_hX + sigmah) + Y[16]*(nuX + rho_X + rho_Xg) + Y[23]*(gammaX + nuX) + Y[9]*(rho_X + rho_Xg) = 0 ; 
+s.t. c3:  Y[2]*sigmah - Y[3]*(LambdaX + mu + rho_h + rho_hX + thetah) + Y[17]*(nuX + rho_X + rho_Xg) + Y[24]*(gammaX + nuX) + Y[10]*(rho_X + rho_Xg) = 0 ; 
+s.t. c4:  Y[11]*eta_X_prep + b*ph + Y[25]*(eta_X_prep + gammaX + nuX) - Y[4]*(LambdaX + mu - Lambdah*(zetah - 1)) + Y[18]*(eta_X_prep + nuX) = 0 ; 
+s.t. c5:  Y[12]*eta_X_prep + Y[26]*(eta_X_prep + gammaX + nuX) - Y[5]*(LambdaX + eta_h_prep + mu + sigmah) + Y[19]*(eta_X_prep + nuX) - Lambdah*Y[4]*(zetah - 1) = 0 ; 
+s.t. c6:  Y[13]*eta_X_prep + Y[5]*sigmah + Y[27]*(eta_X_prep + gammaX + nuX) - Y[6]*(LambdaX + eta_h_prep + mu + thetah) + Y[20]*(eta_X_prep + nuX) = 0 ; 
+s.t. c7:  Y[5]*eta_h_prep + Y[9]*rho_hX + Y[10]*rho_hX + Y[16]*rho_hX + Y[17]*rho_hX + Y[28]*(eta_X_art + gammaX + nuX) + Y[3]*(rho_h + rho_hX + thetah) + Y[14]*(eta_X_art + rho_X + rho_Xg + VTunderART*rho_hX) - Y[7]*(LambdaX + mu) + Y[6]*(eta_h_prep + thetah) + Y[21]*(eta_X_art + nuX + rho_X + rho_Xg + VTunderART*rho_hX) + Y[2]*(rho_h + rho_hX) = 0 ; 
+s.t. c8:  LambdaX*Y[1] - Y[8]*(Lambdah + mu + rho_X + rho_Xg + rho_hX + sigmaX) = 0 ; 
+s.t. c9:  Lambdah*Y[8] + LambdaX*Y[2] - Y[9]*(mu + rho_X + rho_h + rho_Xg + rho_hX + sigmah + sigmaX) = 0 ; 
+s.t. c10:  LambdaX*Y[3] + Y[9]*sigmah - Y[10]*(mu + rho_X + rho_h + rho_Xg + rho_hX + sigmaX + thetah) = 0 ; 
+s.t. c11:  LambdaX*Y[4] - Y[11]*(eta_X_prep + mu + sigmaX - Lambdah*(zetah - 1)) = 0 ; 
+s.t. c12:  LambdaX*Y[5] - Y[12]*(eta_X_prep + eta_h_prep + mu + sigmah + sigmaX) - Lambdah*Y[11]*(zetah - 1) = 0 ; 
+s.t. c13:  LambdaX*Y[6] + Y[12]*sigmah - Y[13]*(eta_X_prep + eta_h_prep + mu + sigmaX + thetah) = 0 ; 
+s.t. c14:  LambdaX*Y[7] + Y[12]*eta_h_prep + Y[9]*rho_h - Y[14]*(eta_X_art + mu + rho_X + rho_Xg + sigmaX + VTunderART*rho_hX) + Y[13]*(eta_h_prep + thetah) + Y[10]*(rho_h + thetah) = 0 ; 
+s.t. c15:  - Y[15]*(Lambdah + mu + nuX + rho_X + rho_Xg + rho_hX) - Y[8]*sigmaX*(epsX - 1) = 0 ; 
+s.t. c16:  Lambdah*Y[15] - Y[16]*(mu + nuX + rho_X + rho_h + rho_Xg + rho_hX + sigmah) - Y[9]*sigmaX*(epsX - 1) = 0 ; 
+s.t. c17:  Y[16]*sigmah - Y[17]*(mu + nuX + rho_X + rho_h + rho_Xg + rho_hX + thetah) - Y[10]*sigmaX*(epsX - 1) = 0 ; 
+s.t. c18:  - Y[18]*(eta_X_prep + mu + nuX - Lambdah*(zetah - 1)) - Y[11]*sigmaX*(epsX - 1) = 0 ; 
+s.t. c19:  - Y[19]*(eta_X_prep + eta_h_prep + mu + nuX + sigmah) - Lambdah*Y[18]*(zetah - 1) - Y[12]*sigmaX*(epsX - 1) = 0 ; 
+s.t. c20:  Y[19]*sigmah - Y[20]*(eta_X_prep + eta_h_prep + mu + nuX + thetah) - Y[13]*sigmaX*(epsX - 1) = 0 ; 
+s.t. c21:  Y[19]*eta_h_prep + Y[16]*rho_h - Y[21]*(eta_X_art + mu + nuX + rho_X + rho_Xg + VTunderART*rho_hX) + Y[20]*(eta_h_prep + thetah) + Y[17]*(rho_h + thetah) - Y[14]*sigmaX*(epsX - 1) = 0 ; 
+s.t. c22:  Y[8]*epsX*sigmaX - Y[22]*(Lambdah + gammaX + mu + nuX) = 0 ; 
+s.t. c23:  Lambdah*Y[22] - Y[23]*(gammaX + mu + nuX + sigmah) + Y[9]*epsX*sigmaX = 0 ; 
+s.t. c24:  Y[23]*sigmah - Y[24]*(gammaX + mu + nuX + thetah) + Y[10]*epsX*sigmaX = 0 ; 
+s.t. c25:  Y[11]*epsX*sigmaX - Y[25]*(eta_X_prep + gammaX + mu + nuX - Lambdah*(zetah - 1)) = 0 ; 
+s.t. c26:  Y[12]*epsX*sigmaX - Y[26]*(eta_X_prep + eta_h_prep + gammaX + mu + nuX + sigmah) - Lambdah*Y[25]*(zetah - 1) = 0 ; 
+s.t. c27:  Y[26]*sigmah - Y[27]*(eta_X_prep + eta_h_prep + gammaX + mu + nuX + thetah) + Y[13]*epsX*sigmaX = 0 ; 
+s.t. c28:  Y[26]*eta_h_prep + Y[24]*thetah - Y[28]*(eta_X_art + gammaX + mu + nuX) + Y[27]*(eta_h_prep + thetah) + Y[14]*epsX*sigmaX = 0 ; 
+

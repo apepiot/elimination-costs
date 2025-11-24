@@ -1,0 +1,51 @@
+param betaIh := 13.194799683714759;
+param betaCh := 1.406761238295781;
+param sigmah := 6.890538634865351;
+param thetah := 0.204544709146265;
+param zetah := 0.631739291427463;
+param eta_h_prep := 4;
+param ph := 0.6000;
+
+param betas := 0.9130;
+param sigmas := 9.4303;
+param gamma3s := 0.0388;
+param taus := 18.5060;
+param thetas := 1.7839;
+
+param betaX := 1.3759;
+param gammaX := 24.8922;
+param nuX := 0.5246;
+param epsX := 0.0486;
+param sigmaX := 40.2979;
+
+param betaY := 27.9007;
+param gammaY := 34.9018;
+param nuY := 1.2615;
+param epsY := 0.9444;
+param sigmaY := 35.6416;
+
+param mu := 0.0286;
+param b := 100;
+param rho_h := 0.4998;
+param rho_s := .3907;
+param rho_c :=  .1282;
+#param rho_g := .1109;
+
+# param rho_hs := 0;
+# param rho_hc := 0;
+# param rho_hg := 0;
+# param rho_sc := 0;
+# param rho_sg := 0;
+# param rho_cg := 0;
+# param rho_hsc := 0;
+# param rho_hsg := 0;
+# param rho_hcg := 0;
+# param rho_scg := 0;
+# param rho_hscg := 0;
+# param eta_s_prep := 0;
+# param eta_c_prep := 0;
+# param eta_g_prep := 0;
+# param eta_s_art := 0; 
+# param eta_c_art := 0;
+# param eta_g_art :=0;
+param c := -0.35;

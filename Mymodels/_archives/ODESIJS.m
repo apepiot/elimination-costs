@@ -1,6 +1,0 @@
-function [M] = ODESIJS(S,I,J,lambda,epsilon, gamma,nu,sigma,b,rho,mu)
-    
-    M = [-lambda-mu, (1-epsilon)*nu +rho, gamma+rho+nu;...
-        lambda, -(epsilon*sigma+(1-epsilon)*nu+rho+mu), 0 ;...
-        0, epsilon*sigma, -(gamma+rho+nu+mu)];
-end
